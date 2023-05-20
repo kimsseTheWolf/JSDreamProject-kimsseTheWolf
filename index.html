@@ -9,6 +9,42 @@
 </head>
 
 <body>
+    <div class="navigate-bar" id="navigate-bar">
+        <div class="element" onclick="triggerBigMenu()">
+            <img src="src/img/list.svg" height="32">
+        </div>
+        <div class="element">
+            <div class="title">
+                Dream Project
+            </div>
+        </div>
+        <div class="element">
+            Programming
+        </div>
+        <div class="element">
+            Projects
+        </div>
+        <div class="element">
+            Future Goals
+        </div>
+    </div>
+    <div class="full-menu-overlay" id="full-menu-overlay">
+        <div class="corner-btn" onclick="triggerBigMenu()">
+            <img src="src/img/close.svg" width="48">
+        </div>
+        <div class="button-item" id="active">
+            Dream Project Home page
+        </div>
+        <div class="button-item">
+            Programming improvements and topics
+        </div>
+        <div class="button-item">
+            Coding Projects
+        </div>
+        <div class="button-item">
+            Future Goals
+        </div>
+    </div>
     <div class="sub-scroll-box">
         <div class="img-overlay">
             <img src="./src/img/jsbg.jpg" width="100%">
@@ -19,6 +55,7 @@
         <div class="content-overlay">
             <div class="title">Programming</div>
             <div class="content">My Dream. My Goal. My Ideas</div>
+            <div>Scroll down to change background</div>
         </div>
     </div>
     <div class="highlight-static-block" id="programming-languages">
