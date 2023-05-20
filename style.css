@@ -21,16 +21,27 @@ body{
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    width: auto;
+    width: fit-content;
     height: fit-content;
     background-color: dodgerblue;
     color: white;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .thin-button:hover {
     background-color: #10559a;
+}
+.thin-button .flex-content{
+    transition: all 0.5s;
+    display: none;
+}
+.thin-button:hover .flex-content {
+    display: flex;
 }
 .main-button:hover {
     background-color: #10559a;
@@ -139,6 +150,37 @@ body{
     font-weight: bold;
     font-size: large;
 }
+.static-item-flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: fit-content;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.static-item-flex-box .row-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.static-item-flex-box .column-display {
+    display: flex;
+    flex-direction: column;
+}
+.static-item-flex-box .title {
+    font-size: larger;
+    font-weight: bold;
+}
 .static-item-box .content {
     text-align: center;
+}
+.static-item-flex-box:hover {
+    background-color: white;
 }

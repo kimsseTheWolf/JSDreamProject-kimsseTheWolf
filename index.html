@@ -100,15 +100,36 @@
         </div>
     </div>
     <div class="highlight-static-block" id="subscribe">
-
+        <div class="static-item-flex-box">
+            <div class="row-display">
+                <img src="src/img/avatar-circle.png" width="128" style="margin-right: 15px">
+                <div class="column-display">
+                    <div>AUTHRO OF WEBSITE</div>
+                    <div class="title">kimsseTheWolf</div>
+                    <div class="row-display">
+                        <div class="thin-button" id="githubBtn" onclick="location.href='https://github.com/kimsseTheWolf'">
+                            <img src="./src/img/github.svg" width="28" style="margin-right: 5px">
+                            Visit GitHub Repositories
+                        </div>
+                        <div class="thin-button" id="bilibiliBtn" onclick="location.href='https://space.bilibili.com/397311019'">
+                            <img src="./src/img/bilibili.svg" width="28" style="margin-right: 5px">
+                            Subscribe on Bilibili
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
     <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
     <script>
         // Style Initialization
         applyBlueGradientColor('programming-languages')
-        //
         applyGradientColor('projects', '#D9A9FF', '#9C9CFF')
+        applyGradientColor('subscribe', '#89FFE6', '#72E1E8')
+
+        applyThinButtonColor('githubBtn', '#494949', '#424242')
+        applyThinButtonColor('bilibiliBtn', '#FF3EA0', '#af2b70')
     </script>
 </body>
 
