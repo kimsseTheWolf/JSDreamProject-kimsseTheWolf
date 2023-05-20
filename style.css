@@ -226,19 +226,19 @@ body{
 }
 
 /*Menu details overlay*/
-.full-menu-overlay {
+#full-menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 0; /*Changed by JS*/
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 4000;
+    transition: 0.5s;
 }
 .full-menu-overlay .corner-btn{
     position: absolute;

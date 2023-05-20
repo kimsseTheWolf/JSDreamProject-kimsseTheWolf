@@ -1,7 +1,5 @@
-//Global Variables definition
+//Global Variables definitions
 let bigMenu = false
-document.getElementById('navigate-bar').style.display = 'flex'
-document.getElementById('full-menu-overlay').style.display = 'none'
 
 function applyBlueGradientColor(id_name){
     // apply the background color to the blue
@@ -28,11 +26,28 @@ function triggerBigMenu() {
     if (bigMenu) {
         // show the big menu
         document.getElementById('navigate-bar').style.display = 'none'
-        document.getElementById('full-menu-overlay').style.display = 'flex'
+        let elements = document.querySelectorAll('#menu-overlay-item')
+        for (let i = 0; i < elements.length; i++){
+            elements[i].style.display = 'flex'
+        }
+        document.getElementById('full-menu-overlay').style.width = '100vh'
     }
     else {
         // hide the big menu
+        document.getElementById('full-menu-overlay').style.width = '0'
+        let elements = document.querySelectorAll('#menu-overlay-item')
+        for (let i = 0; i < elements.length; i++){
+            elements[i].style.display = 'none'
+        }
         document.getElementById('navigate-bar').style.display = 'flex'
-        document.getElementById('full-menu-overlay').style.display = 'none'
+    }
+}
+
+function initializeBigMenu() {
+    document.getElementById('navigate-bar').style.display = 'flex'
+    document.getElementById('full-menu-overlay').style.width = '0'
+    let elements = document.querySelectorAll('#menu-overlay-item')
+    for (let i = 0; i < elements.length; i++){
+        elements[i].style.display = 'none'
     }
 }

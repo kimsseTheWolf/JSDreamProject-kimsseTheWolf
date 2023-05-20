@@ -29,20 +29,20 @@
         </div>
     </div>
     <div class="full-menu-overlay" id="full-menu-overlay">
-        <div class="corner-btn" onclick="triggerBigMenu()">
-            <img src="src/img/close.svg" width="48">
-        </div>
-        <div class="button-item" id="active">
+        <div class="button-item" id="menu-overlay-item">
             Dream Project Home page
         </div>
-        <div class="button-item">
+        <div class="button-item" id="menu-overlay-item">
             Programming improvements and topics
         </div>
-        <div class="button-item">
+        <div class="button-item" id="menu-overlay-item">
             Coding Projects
         </div>
-        <div class="button-item">
+        <div class="button-item" id="menu-overlay-item">
             Future Goals
+        </div>
+        <div class="button-item" id="menu-overlay-item" onclick="triggerBigMenu()">
+            Close
         </div>
     </div>
     <div class="sub-scroll-box">
@@ -169,6 +169,8 @@
 
         applyThinButtonColor('githubBtn', '#494949', '#424242')
         applyThinButtonColor('bilibiliBtn', '#FF3EA0', '#af2b70')
+
+        initializeBigMenu()
     </script>
 </body>
 
