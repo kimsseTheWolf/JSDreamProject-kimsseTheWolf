@@ -370,7 +370,7 @@ body{
 }
 .timeline-content-box .picture-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 2;
@@ -403,4 +403,8 @@ body{
 }
 .timeline-box:hover .highlight-block {
     background-color: #87c2ff;
+}
+.row-display{
+    display: flex;
+    flex-direction: row;
 }

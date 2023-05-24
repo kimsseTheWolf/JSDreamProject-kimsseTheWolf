@@ -51,3 +51,14 @@ function initializeBigMenu() {
         elements[i].style.display = 'none'
     }
 }
+
+function programmingTriggerTabs(tabName){
+    if (tabName == "progress") {
+        document.getElementById("timeline").style.display = "block"
+        document.getElementById("topics").style.display = "none"
+    }
+    else {
+        document.getElementById("timeline").style.display = "none"
+        document.getElementById("topics").style.display = "block"
+    }
+}
