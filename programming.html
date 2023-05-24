@@ -21,9 +21,6 @@
         <div class="element" onclick="location.href='projects.html'">
             Projects
         </div>
-        <div class="element" onclick="location.href='future.html'">
-            Future Goals
-        </div>
     </div>
     <div class="full-menu-overlay" id="full-menu-overlay">
         <div class="button-item" id="menu-overlay-item" onclick="location.href='index.html'">
@@ -35,9 +32,6 @@
         <div class="button-item" id="menu-overlay-item" onclick="location.href='projects.html'">
             Coding Projects
         </div>
-        <div class="button-item" id="menu-overlay-item" onclick="location.href='future.html'">
-            Future Goals
-        </div>
         <div class="button-item" id="menu-overlay-item" onclick="triggerBigMenu()">
             Close
         </div>
@@ -48,10 +42,10 @@
             <div class="content">This page shows up my programming progresses and history.</div>
         </div>
         <div class="tab-panel">
-            <div class="button" onclick="programmingTriggerTabs('progress')">
+            <div class="button" id="progressBtn" onclick="programmingTriggerTabs('progress')">
                 Progresses
             </div>
-            <div class="button" onclick="programmingTriggerTabs('topics')">
+            <div class="button" id="topicsBtn" onclick="programmingTriggerTabs('topics')">
                 Topics
             </div>
         </div>
@@ -267,7 +261,59 @@
             </div>
         </div>
         <div id="topics">
-            More stuff will be appears in the future...
+            <div class="static-box">
+                <div class="content">
+                    <h2>HTTP Server and Website Development</h2>
+                    <div class="content-box">
+                        This part of knowledge that helps me to understand how does clients and server communicate with each other, how does a website was built, and what are some of the techniques I need in order to develop a website.
+                    </div>
+                    <div class="content-box">
+                        This part includes front end development (HTML/CSS/Javascript/Nodejs/Vue/etc.), backend development (Java Springboot / Gin in Golang / SQL Databases), and server knowledge (Docker / Linux).
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="src/img/server.svg">
+                </div>
+            </div>
+            <div class="static-box">
+                <div class="content">
+                    <h2>Electron Application</h2>
+                    <div class="content-box">
+                        Electron application allows you to develop a cross-platform application by using HTML, CSS, and Javascript.
+                    </div>
+                    <div class="content-box">
+                        I could build an application in a more direct and easier way by using the things I know and build up new stuff I want.
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="src/img/electron.svg">
+                </div>
+            </div>
+            <div class="static-box">
+                <div class="content">
+                    <h2>Vue.js</h2>
+                    <div class="content-box">
+                        Vue.js allows me to develop webpages and functions much more easily by putting different kinds of components together. Also it will help me to develop a single page application easier.
+                    </div>
+                    <div class="content-box">
+                        Now my current project Memesa is using Vue.js to develop the front-end.
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="src/img/Vue.svg">
+                </div>
+            </div>
+            <div class="static-box">
+                <div class="content">
+                    <h2>Machine Learning</h2>
+                    <div class="content-box">
+                        Machine learning is the latest topic I'm trying to make progress. But due to my poor math basis, I will continue the progress of machine learning after this summer vacation.
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="src/img/ml.svg">
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

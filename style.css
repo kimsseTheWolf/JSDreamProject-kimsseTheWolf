@@ -404,6 +404,38 @@ body{
 .timeline-box:hover .highlight-block {
     background-color: #87c2ff;
 }
+.static-box {
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.static-box:hover {
+    background-color: rgba(0,0,0,0.15);
+}
+.static-box .content{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+.static-box .img {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.static-box .content-box {
+    margin: 5px;
+}
 .row-display{
     display: flex;
     flex-direction: row;
